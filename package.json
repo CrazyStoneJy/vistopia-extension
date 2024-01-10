@@ -2,10 +2,12 @@
   "name": "vistopia-extension",
   "version": "1.0.0",
   "description": "chrome extension for vistopia",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "build": "tsc -p ./tsconfig.json"
+    "build": "rm -rf ./dist/* && tsc -p ./tsconfig.json",
+    "bundle": "rollup -c"
   },
   "repository": {
     "type": "git",
@@ -23,8 +25,9 @@
   },
   "homepage": "https://github.com/CrazyStoneJy/vistopia-extension#readme",
   "dependencies": {
+    "rollup": "^4.9.4",
     "typescript": "^5.3.3",
-    "vistopia-api": "^1.0.4"
+    "vistopia-api": "^1.0.6"
   },
   "devDependencies": {
     "@types/chrome": "^0.0.256"
