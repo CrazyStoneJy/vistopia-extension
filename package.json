@@ -1,0 +1,28 @@
+{
+  "name": "vistopia-extension",
+  "version": "1.0.0",
+  "description": "chrome extension for vistopia",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc -p ./tsconfig.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/CrazyStoneJy/vistopia-extension.git"
+  },
+  "keywords": [
+    "chrome",
+    "extension",
+    "vistopia"
+  ],
+  "author": "crazystone",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CrazyStoneJy/vistopia-extension/issues"
+  },
+  "homepage": "https://github.com/CrazyStoneJy/vistopia-extension#readme",
+  "dependencies": {
+    "typescript": "^5.3.3"
+  }
+}
